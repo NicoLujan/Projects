@@ -1,11 +1,19 @@
 # depslib dependency file v1.0
-1627508533 source:c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\finales\github\projects\tp3_primeraparte\main.cpp
+1627512931 source:c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\finales\github\projects\tp3_primeraparte\main.cpp
 	<iostream>
 	<Punto.h>
+	<Segmento.h>
 
-1627508604 source:c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\finales\github\projects\tp3_primeraparte\src\punto.cpp
+1627511958 source:c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\finales\github\projects\tp3_primeraparte\src\punto.cpp
 	"Punto.h"
 	"math.h"
 
-1627508604 c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\finales\github\projects\tp3_primeraparte\include\punto.h
+1627511947 c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\finales\github\projects\tp3_primeraparte\include\punto.h
+
+1627512806 source:c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\finales\github\projects\tp3_primeraparte\src\segmento.cpp
+	"Segmento.h"
+	<iostream>
+
+1627512381 c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\finales\github\projects\tp3_primeraparte\include\segmento.h
+	<Punto.h>
 

@@ -35,8 +35,10 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/Punto.h" />
+		<Unit filename="include/Segmento.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Punto.cpp" />
+		<Unit filename="src/Segmento.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

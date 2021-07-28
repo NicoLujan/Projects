@@ -28,6 +28,17 @@ bool Punto::operator==(const Punto & P) const
     return ((this->CoordX() == P.CoordX()) && (this->CoordY() == P.CoordY()));
 }
 
+bool Punto::operator!=(const Punto & P) const
+{
+    return ((this->CoordX() != P.CoordX()) || (this->CoordY() != P.CoordY()));
+}
+
+void Punto::operator=(const Punto & P)
+{
+    this->x = P.CoordX();
+    this->y = P.CoordY();
+}
+
 float Punto::distancia(const Punto & p) const
 {
     return sqrt(pow(this->CoordX() - p.CoordX(),2) + pow(this->CoordY() - p.CoordY(),2));

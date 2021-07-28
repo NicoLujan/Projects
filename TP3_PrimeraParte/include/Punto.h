@@ -11,6 +11,8 @@ class Punto
         float CoordY() const;
         void trasladar(float,float);
         bool operator ==(const Punto&) const;
+        void operator =(const Punto&);
+        bool operator !=(const Punto&) const;
         float distancia(const Punto&) const;
         virtual ~Punto();
 
