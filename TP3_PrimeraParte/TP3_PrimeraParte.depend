@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1627508533 source:c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\finales\github\projects\tp3_primeraparte\main.cpp
+	<iostream>
+	<Punto.h>
+
+1627508604 source:c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\finales\github\projects\tp3_primeraparte\src\punto.cpp
+	"Punto.h"
+	"math.h"
+
+1627508604 c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\finales\github\projects\tp3_primeraparte\include\punto.h
+
