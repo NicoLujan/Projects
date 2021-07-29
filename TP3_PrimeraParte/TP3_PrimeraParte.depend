@@ -1,8 +1,9 @@
 # depslib dependency file v1.0
-1627512931 source:c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\finales\github\projects\tp3_primeraparte\main.cpp
+1627528906 source:c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\finales\github\projects\tp3_primeraparte\main.cpp
 	<iostream>
 	<Punto.h>
 	<Segmento.h>
+	"Pila.h"
 
 1627511958 source:c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\finales\github\projects\tp3_primeraparte\src\punto.cpp
 	"Punto.h"
@@ -16,4 +17,19 @@
 
 1627512381 c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\finales\github\projects\tp3_primeraparte\include\segmento.h
 	<Punto.h>
+
+1627525273 source:c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\finales\github\projects\tp3_primeraparte\src\circulo.cpp
+	"Circulo.h"
+
+1627525273 c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\finales\github\projects\tp3_primeraparte\include\circulo.h
+	<Punto.h>
+	<Segmento.h>
+
+1627528917 source:c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\finales\github\projects\tp3_primeraparte\src\pila.cpp
+	"Pila.h"
+	"iostream"
+	<assert.h>
+	<cassert>
+
+1627528395 c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\finales\github\projects\tp3_primeraparte\include\pila.h
 

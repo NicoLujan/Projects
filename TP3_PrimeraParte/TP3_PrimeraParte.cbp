@@ -34,9 +34,13 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Circulo.h" />
+		<Unit filename="include/Pila.h" />
 		<Unit filename="include/Punto.h" />
 		<Unit filename="include/Segmento.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Circulo.cpp" />
+		<Unit filename="src/Pila.cpp" />
 		<Unit filename="src/Punto.cpp" />
 		<Unit filename="src/Segmento.cpp" />
 		<Extensions>
