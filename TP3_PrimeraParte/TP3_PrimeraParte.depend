@@ -1,9 +1,10 @@
 # depslib dependency file v1.0
-1627528906 source:c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\finales\github\projects\tp3_primeraparte\main.cpp
+1627767388 source:c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\finales\github\projects\tp3_primeraparte\main.cpp
 	<iostream>
 	<Punto.h>
 	<Segmento.h>
 	"Pila.h"
+	<Lista.h>
 
 1627511958 source:c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\finales\github\projects\tp3_primeraparte\src\punto.cpp
 	"Punto.h"
@@ -32,4 +33,11 @@
 	<cassert>
 
 1627528395 c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\finales\github\projects\tp3_primeraparte\include\pila.h
+
+1627767551 source:c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\finales\github\projects\tp3_primeraparte\src\lista.cpp
+	"Lista.h"
+	<iostream>
+	<cassert>
+
+1627767250 c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\finales\github\projects\tp3_primeraparte\include\lista.h
 

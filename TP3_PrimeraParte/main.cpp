@@ -2,24 +2,15 @@
 #include <Punto.h>
 #include <Segmento.h>
 #include "Pila.h"
+#include<Lista.h>
 
 using namespace std;
 
 int main()
 {
-    Pila<int> P1;
-    P1.agregarP(8);
-    P1.eliminarP();
-    P1.agregarP(2);
-    P1.eliminarP();
-    P1.agregarP(3);
-   // P1.eliminarP();
-    P1.agregarP(4);
-    P1.eliminarP();
-    P1.agregarP(6);
-    P1.eliminarP();
-    P1.agregarP(9);
-    P1.eliminarP();
+    Lista<int> L1;
+
+    cout<<L1.recuperarElemento(4);
 
     return 0;
 }
