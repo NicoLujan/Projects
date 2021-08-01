@@ -34,15 +34,19 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Arbin.h" />
 		<Unit filename="include/Circulo.h" />
 		<Unit filename="include/Conjunto.h" />
+		<Unit filename="include/Heap.h" />
 		<Unit filename="include/Lista.h" />
 		<Unit filename="include/Pila.h" />
 		<Unit filename="include/Punto.h" />
 		<Unit filename="include/Segmento.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Arbin.cpp" />
 		<Unit filename="src/Circulo.cpp" />
 		<Unit filename="src/Conjunto.cpp" />
+		<Unit filename="src/Heap.cpp" />
 		<Unit filename="src/Lista.cpp" />
 		<Unit filename="src/Pila.cpp" />
 		<Unit filename="src/Punto.cpp" />

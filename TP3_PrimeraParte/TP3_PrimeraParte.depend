@@ -41,3 +41,16 @@
 
 1627767250 c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\finales\github\projects\tp3_primeraparte\include\lista.h
 
+1627769170 source:c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\finales\github\projects\tp3_primeraparte\src\conjunto.cpp
+	"Conjunto.h"
+	"Lista.h"
+	<iostream>
+
+1627768556 c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\finales\github\projects\tp3_primeraparte\include\conjunto.h
+	"Lista.h"
+
+1627775385 source:c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\finales\github\projects\tp3_primeraparte\src\heap.cpp
+	"Heap.h"
+
+1627775089 c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\finales\github\projects\tp3_primeraparte\include\heap.h
+
