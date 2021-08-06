@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1628272610 source:c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\finales\github\projects\tp5_greedy\main.cpp
+	<iostream>
+
+1628272693 source:c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\finales\github\projects\tp5_greedy\src\prueba.cpp
+	"Prueba.h"
+
+1628272701 c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\finales\github\projects\tp5_greedy\include\prueba.h
+
