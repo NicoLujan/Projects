@@ -230,16 +230,50 @@ int subArrMax(int*a, int i, int j,int & inicio, int & fin) {
     }
 }
 
+int mediana(int X[],int Y[],int inicX,int finX,int inicY,int finY){
+
+    if((inicX>=finX) && (inicY>=finY)){ //Caso base, arreglos de un elemento
+        if(X[finX] <= Y[finY])
+            return X[finX];
+        else
+            return Y[finY];
+    }
+
+    int med = (finX - inicX + 1);
+
+    if(med == 2){ //caso de dos arreglos con dos elementos
+        if(X[finX] < Y[inicY])
+            return X[finX];
+        else if(Y[finY] < X[inicX])
+            return Y[finY];
+        else if(Y[inicY] < X[inicX])
+            return X[inicX];
+        else
+            return Y[inicY];
+    }
+
+        //Caso general
+
+        med = (med - 1)/2;
+
+        int posX = inicX + med;
+        int posY = inicY + med;
+
+        if(X[posX] == Y[posY])
+            return X[posX];
+        else if(X[posX] < Y[posY]){
+            return mediana(X,Y,finX-med,finX,inicY,inicY+med);
+        }else
+            return mediana(X,Y,inicX,inicX+med,finY-med,finY);
+}
+
 int main()
 {
-    int myArray[] = {-4,-1,0,1,3,4,6,9,10};
-
-    int min,max,inic,fin;
-
-    DivideMAXMIN(myArray,0,8,max,min);
+    int X[] = {3,4};
+    int Y[] = {1,2};
 
 
-    cout<<subArrMax(myArray,0,8,inic,fin);
+    cout<<mediana(X,Y,0,1,0,1);
 }
 
 
