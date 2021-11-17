@@ -296,9 +296,10 @@ int Planificar_tareas (int p[], int J[], int n){
     return k;
 }
 
-
 int main()
 {
+    int f(){
+    }
 
     return 0;
 }
