@@ -8,13 +8,13 @@ using namespace std;
 
 mutex mtx2;
 void Ej4(int id){
-    static thread_local int j = 0;
+    int j = 0;
     if (j<10){
-        mtx.lock();
+        mtx2.lock();
         printf("id : %d, j: %d \n",id,j);
         j++;
-        mtx.unlock();
-        f(id+1);
+        mtx2.unlock();
+        Ej4(id+1);
     }
 }
 
@@ -39,7 +39,7 @@ void Ej2(int id){
     printf("&l-&m : %d, \n",(&l-&m));
     k--;
     if (k>0)
-        f(id+1);
+        Ej2(id+1);
 }
 
 //Ejercicio numero 1
@@ -49,20 +49,26 @@ void Ej1(int id){
     for (int i=0;i<1000;i++);
     j--;
     if (j>0)
-        f(id+1);
+        Ej1(id+1);
 }
 
 int main (int argc, char *argv[]){
-
-    thread th1(f,100);
-    thread th2(f,200);
-    thread th3(f,300);
-    thread th4(f,400);
+/*
+    thread th1(Ej4,100);
+    thread th2(Ej4,200);
+    thread th3(Ej4,300);
+    thread th4(Ej4,400);
 
     th1.join();
     th2.join();
     th3.join();
     th4.join();
+
+*/
+
+    int static a;
+
+    cout<<&a;
 
     return 0;
 }
