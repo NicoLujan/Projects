@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1649267732 source:c:\users\nicolás\onedrive\escritorio\nico\facultad\nico\materias actuales\teoria de la informacion\práctica\tp1_motormontecarlo\main.cpp
+	<iostream>
+	<cmath>
+	<cstdlib>
+	<ctime>
+

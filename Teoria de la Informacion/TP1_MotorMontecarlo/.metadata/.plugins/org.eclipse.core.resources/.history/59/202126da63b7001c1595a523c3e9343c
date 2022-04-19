@@ -1,0 +1,43 @@
+
+public class main {
+	
+	static double epsilon = 0.000005;
+	static int MIN = 1000;
+	
+	public static int sacarSobre() {
+		double prob_acum[]= {0.6,1};
+		double sobre = Math.random();
+		
+		for(int i=0;i<2;i++) {
+			if(sobre<prob_acum[i])
+				return i;
+		}
+		return -1;
+	}
+	
+	public static boolean Converge(double prob_ant,double prob_act) {
+		return (Math.abs(prob_ant - prob_act) < epsilon);
+	}
+
+	public static void main(String[] args) {
+		
+		int muestras=0,exitos=0;
+		double prob_act=0.0,prob_ant=-1.0;
+		
+		while ((!Converge(prob_ant,prob_act)) || (muestras < MIN)) {
+			int S1=sacarSobre();
+			int S2=sacarSobre();
+			
+			if((S1 == 0) || (S2 == 0))
+				exitos++;
+			
+			System.out.println(exitos);
+			muestras++;
+			prob_ant=prob_act;
+			prob_act=exitos/muestras;
+		}
+		
+		System.out.println(prob_act);
+	}
+
+}

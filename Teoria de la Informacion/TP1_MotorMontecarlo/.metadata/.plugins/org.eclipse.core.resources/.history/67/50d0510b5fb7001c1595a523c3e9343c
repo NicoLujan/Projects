@@ -1,0 +1,23 @@
+
+public class main {
+	
+	static double epsilon = 0.000005;
+	static int MIN = 1000;
+	
+	/*int sacarSobre() {
+		double prob_acum[]= {3/5,1};
+		int sobre = 
+		return -1;
+	}*/
+	
+	boolean converge(double prob_ant,double prob_act) {
+		return (Math.abs(prob_ant - prob_act) < epsilon);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println(Math.abs(-1242));
+
+	}
+
+}

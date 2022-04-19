@@ -1,0 +1,42 @@
+
+public class main {
+	
+	static float epsilon = 0.0000000000005f;
+	static int MIN = 1000;
+	
+	public static int sacarSobre() {
+		float prob_acum[]= {0.6f,1};
+		float sobre = (float)Math.random();
+		
+		for(int i=0;i<2;i++) {
+			if(sobre<prob_acum[i])
+				return i;
+		}
+		return -1;
+	}
+	
+	public static boolean Converge(float prob_ant,float prob_act) {
+		return (Math.abs(prob_ant - prob_act) < epsilon);
+	}
+
+	public static void main(String[] args) {
+		
+		float prob_act=0.0f,prob_ant=-1.0f,muestras=0.0f,exitos=0.0f;
+		
+		while ((!Converge(prob_ant,prob_act)) || (muestras < MIN)) {
+			int S1=sacarSobre();
+			int S2=sacarSobre();
+			
+			if((S1 == 0) || (S2 == 0))
+				exitos++;
+			
+			
+			muestras++;
+			prob_ant = prob_act;
+			prob_act = exitos/muestras;
+		}
+		
+		System.out.println(prob_act);
+	}
+
+}
