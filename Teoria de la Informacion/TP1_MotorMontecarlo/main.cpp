@@ -10,9 +10,10 @@ const int MIN = 1000;
 
 int SacarSobre(){
 
-    float prob_acum[] = {30/50,100};
-    float aleatorio = (rand() % 101);
     srand(time(NULL));
+    float aleatorio = (float)(rand() % 101)/100;
+    float prob_acum[] = {(float)30/50,100};
+
 
     for(int i=0;i<2;i++){
         if(aleatorio < prob_acum[i])
@@ -35,7 +36,7 @@ int main()
     int muestras=0,exitos=0;
     float prob_act=0,prob_ant=-1;
 
-    while ((not Converge(prob_ant,prob_act)) && (muestras < MIN)){
+    while ((not Converge(prob_ant,prob_act)) || (muestras < MIN)){
         int S1 = SacarSobre();
         int S2 = SacarSobre();
 
@@ -44,9 +45,8 @@ int main()
 
         muestras++;
         prob_ant=prob_act;
-        prob_act=exitos/muestras;
-
+        prob_act= (float) exitos/muestras;
     }
 
-    cout<<prob_act;
+    cout << prob_act;
 }
