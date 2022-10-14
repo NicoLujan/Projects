@@ -68,6 +68,8 @@ public class main {
 	static float epsilon = 0.0000000000000005f;
 	static int MIN = 10000000;
 	
+	int [][] matriz = {{2,4,4},{6,6,9},{8,10,12}};
+	
 	//4.a
 	static int SacarMuestra() {
 		float [] EdoSdadoNeg= {0.00262f,1f}; // 0-> Persona enferma dado que salio negativo
