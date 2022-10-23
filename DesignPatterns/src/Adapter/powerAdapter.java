@@ -1,3 +1,8 @@
+/*
+ * El patrón adaptador se utiliza para transformar una interfaz en otra, de tal modo que una clase que no 
+ * pueda utilizar la primera haga uso de ella a través de la segunda.
+ * 
+ */
 package Adapter;
 
 public class powerAdapter implements Enchufable{
