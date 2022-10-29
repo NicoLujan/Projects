@@ -1,0 +1,5 @@
+Ejemplo.gz
+Ejemplo1a.bz2
+Ejemplo1b.zip
+Ejemplo1c.tar
+otroEjemplo.txt
