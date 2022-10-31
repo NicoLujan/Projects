@@ -4,7 +4,6 @@
 # archivos que queremos renombrar y el script se debe ejecutar en el mismo
 # directorio donde se encuentran los archivos
 
-OLDIFS=$IFS
 IFS='
 '
 
@@ -12,15 +11,13 @@ count=0
 
 for line in $(cat $1);
 do
-	aux=$(echo $line | tr [A-Z] [a-z] | tr ' ' '_')
+	aux=$(echo $line | tr [A-Z] [a-z] | tr ' ' _)
 	
-	if [ $line != $aux ];
+	if [[ $line != $aux ]];
 	then
-		let count++
+		let count=count+1
 		mv $line $aux
 	fi
+	
+	echo "Se han renombrado: " $count " archivos."
 done
-
-echo "Se han renombrado: " $count " archivos."
-
-IFS=$OLDIFS
