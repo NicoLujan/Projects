@@ -1,0 +1,9 @@
+PID TIME CMD
+1 00:31:17 update-manager
+2 00:00:13 update-notifier
+3 00:35:10 basg
+4 00:17:15 inst
+5 00:29:17 wapp
+6 00:00:13 wappasd
+7 01:22:14 wapp
+8 01:22:14 wappasd
